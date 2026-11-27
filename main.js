@@ -77,7 +77,7 @@ function createNoteElement(text, dateCreated, id) {
   const cardTextArea = createTextAreaElement(text, id);
   const cardFooter = createCardFooter(cardTextArea);
 
-  const randomColor = colors[Math.floor(Math.random() * colors.length + 1)];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
   noteCard.style.backgroundColor = randomColor;
 
   noteCard.classList.add("note-card");
@@ -125,6 +125,7 @@ function createDeleteBtn(id) {
   deleteBtnElement.classList.add("delete-btn");
   deleteBtnElement.textContent = "×";
   deleteBtnElement.title = "Delete note";
+  deleteBtnElement.ariaLabel = "Delete note";
 
   deleteBtnElement.addEventListener("click", (e) => {
     deleteNote(e, id);
