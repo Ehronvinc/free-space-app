@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Garden of Thoughts</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="brand"
+          ><span class="logo">✦</span>your random thoughts</a
+        >
+        <span class="save-status">
+          <span class="saved-dot"></span>
+          <span class="saved-text">Saved changes</span>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-container">
+        <div class="hero-main">
+          <p class="eyebrow">A corner of the internet, just for you</p>
+          <h1 class="hero-text">
+            Let your mind
+            <span class="nowrap">wander <span class="hero-logo">✦</span></span>
+          </h1>
+
+          <p class="subtitle">
+            No need for perfect sentences. Just a place to jat down
+            <span class="nowrap">your unsaid feelings.</span>
+          </p>
+        </div>
+
+        <div class="hero-btn">
+          <button class="new-note-btn" id="new-note">
+            <span class="plus-sign">+</span>New note
+          </button>
+        </div>
+      </section>
+
+      <section class="notes-container" id="notes-cont">
+        <div class="notes-heading">
+          <span class="notes-head-text">Your free space</span>
+          <span class="thoughts-counter">0 thought</span>
+        </div>
+
+        <div class="empty-container" id="empty" hidden>
+          <span class="cloud">☁</span>
+          <p class="empty-header">A fresh page.</p>
+          <p class="empty-subtitle">
+            Your thoughts can be messy. Its okay to start somewhere.
+          </p>
+        </div>
+
+        <div class="note-footer" id="note-footer">
+          <p>
+            <span class="footer-logo">✦</span> Take up space. You belong here.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="page-footer">
+        <p class="footer-text">
+          A safe space to land <span class="footer-dot">·</span> Your notes are
+          kept in this browser
+        </p>
+      </section>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
